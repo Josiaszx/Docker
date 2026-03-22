@@ -9,9 +9,10 @@ WORKDIR /app
 
 # 3. Copiamos el código de la API
 COPY python-api/ ./python-api/
+COPY python-api/requirements.txt .
 
 # 4. Instalamos dependencias
-RUN pip install --no-cache-dir fastapi uvicorn
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 4. Exponer puertos
 EXPOSE 8000

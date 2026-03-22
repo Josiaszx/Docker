@@ -145,7 +145,7 @@ docker stop 2d8be959ed1bf3ccea6adcc19d2cd236c941d9a30a3e093345fd574462598c69
 Para ver todos los contenedores independientemente si están en ejecución o no:
 
 ```docker
-docker run ps -a
+docker ps -a
 ```
 
 ### Descargar, crear y ejecutar contenedor
@@ -186,7 +186,7 @@ docker network ls
 
 ### Crear red
 
-Creamos una red con el comando `docker create network` seguido del nombre de la red.
+Creamos una red con el comando `docker network create` seguido del nombre de la red.
 
 ```docker
 docker network create nueva-red
